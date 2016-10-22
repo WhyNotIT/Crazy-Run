@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/home_bg">
+
+
+
+    <RelativeLayout
+        android:id="@+id/screen_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/crazy_run_logo"/>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="60"
+       android:gravity="center">
+
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/toast_level"
+           android:layout_centerInParent="true"/>
+
+       <TextView
+           android:paddingBottom="17dp"
+           android:id="@+id/niveau"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="30dp"
+           android:textColor="#FFFFFF"
+           android:layout_centerInParent="true"/>
+
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        >
+
+        <ImageView
+            android:id="@+id/play_bouton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/menu_lifes"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+
+    <TextView
+        android:id="@+id/nb_lifes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text=""
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/lifes_ic"
+        android:paddingBottom="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/nb_diamonds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text=""
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/diamonds_ic"
+        android:paddingBottom="10dp"
+        />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/settings_ic"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/why_not"
+        android:visibility="gone"
+        android:background="@drawable/why_not">
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

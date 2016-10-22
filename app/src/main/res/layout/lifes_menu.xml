@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/message_lifes_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#53acff"
+            android:textSize="16sp"
+            android:text="Your lifes are over!\n you can wait 3 minutes or buy new lifes."
+            android:gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>

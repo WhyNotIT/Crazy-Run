@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/frame">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <Chronometer
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/chronometer"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textColor="#18ffff"
+            android:textStyle="bold"
+            android:background="@drawable/score_bg"/>
+
+    <ImageView
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/finish"
+        />
+
+
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text=""
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/level_bg"
+            android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/carrefour1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/carrefour1"/>
+
+    <ImageView
+        android:id="@+id/carrefour2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/carrefour2"/>
+
+    <ImageView
+        android:id="@+id/carrefour3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/carrefour3"/>
+
+        <TextView
+            android:id="@+id/best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#18ffff"
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="12dp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/score_bg"
+            android:layout_margin="1dp"
+            android:paddingBottom="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#18ffff"
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="15dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:background="@drawable/score_bg"
+            android:paddingBottom="18dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/new_best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/new_best_score"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/menu_lifes"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+
+
+        <TextView
+            android:id="@+id/nb_lifes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text=""
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/lifes_ic"
+            android:paddingBottom="10dp" />
+
+
+        <TextView
+            android:id="@+id/nb_diamonds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text=""
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/diamonds_ic"
+            android:paddingBottom="10dp" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/settings_ic"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/frame_cars">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad_banner"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+ 
+</RelativeLayout>

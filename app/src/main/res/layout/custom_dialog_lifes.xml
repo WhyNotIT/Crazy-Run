@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DA5F6A"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_dia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Switch Diamonds"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lifes_ic"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/choice_options">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:text="Switch your Diamonds for lifes :"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DA5F6A"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp" >
+
+            <RadioButton
+                android:id="@+id/switch_4d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 Diamonds = 10 Lifes"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:checked="true"
+                />
+
+
+            <RadioButton
+            android:id="@+id/switch_8d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 Diamonds = 25 Lifes"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+            />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:theme="@style/AppTheme"
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:text="Switch"
+            android:textColor="#DA5F6A"
+            android:textStyle="bold" />
+
+        <Button
+            android:theme="@style/AppTheme"
+            android:id="@+id/btn_no"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:text="Cancel"
+            android:textColor="#DA5F6A"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
